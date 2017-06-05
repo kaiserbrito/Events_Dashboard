@@ -27,4 +27,6 @@ Route::get('contact', 'ContactController@create')->name('contact');
 
 Route::post('contact', 'ContactController@store')->name('contact_store');
 
+Route::get('/search', 'EventController@getSearch')->name('event.search');
+
 

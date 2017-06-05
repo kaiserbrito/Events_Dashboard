@@ -16,4 +16,10 @@ class EventController extends Controller
     public function getAbout() {
         return view('about');
     }
+
+    public function getSearch() {
+        $search = \Request::get('search');
+        $events = Event::where('title', 'like', '%'.$search.'%')->orderBy('id')->paginate(4);
+        return view('event.search', ['events' => $events]);
+    }
 }

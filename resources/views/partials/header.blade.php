@@ -19,11 +19,13 @@
                         <li><a href="{{ route('about') }}">About Us</a></li>
                         <li><a href="{{ route('contact') }}">Contact Us</a></li>
                     </ul>
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search Events">
+                    <form action="{{ route('event.search') }}" method="get" role="search" class="navbar-form navbar-right">
+                        <div class="form-group custom-search-form">
+                            <input type="text" class="form-control" name="search" placeholder="Search Events">
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">
+                            <span class="fa fa-search"></span>
+                        </button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
