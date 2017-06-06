@@ -1,4 +1,5 @@
 <h1>Development of the LSE Website.</h1>
+<p>In this project, the registered user is able to create new events, and these events are shown for anyone</p>
 
 <h2><ul>This projects was build with:</h2>
 <li>Laravel</li>
